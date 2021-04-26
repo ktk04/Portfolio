@@ -131,12 +131,18 @@ border-color: black;
 background: white;
 }
 
+#skill.card
+{
+  border-color: black;
+}
 #skill .card:hover{
 color:white;
 border-color: black;
 background: black;
 transition: .3s;
 }
+
+
 
 .gotop
 {
