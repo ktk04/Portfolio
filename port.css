@@ -3,9 +3,10 @@ html
  scroll-behavior: smooth;
 }
 
-.navbar
+.navbar-dark
 {
   position:fixed;
+  background:black;
 }
 .top-buffer { 
   margin-top:100px; }
@@ -16,9 +17,8 @@ html
     height:60px;
 }
 
-.topnav a{
-    color: white;
-    text-decoration:none;
+.nav-link{
+    color: white !important; 
     display:block;
     float:left;
 }
@@ -108,9 +108,22 @@ html
 .text-white{
   color: white;
 }
-#skills
+#Skills
 {
-  background: white;
+  background: black;
+  padding-top: 98px;
+  padding-bottom:98px;
+}
+
+#tech-stack
+{
+  color:white;
+  font-size: 2rem;
+}
+
+#Skills > div
+{
+  font-size: 1.5rem;
 }
 #social i{
   width:50px;
@@ -228,4 +241,41 @@ transition: .3s;
   min-width: 100%;
   min-height: 100%;
   z-index: -1000;
+}
+.Skills {
+  background:black;
+}
+
+#skillimg{
+  height:15vh;
+}
+.skills_container {
+  margin: 0 auto;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  border: 5px solid #181818;
+  border-radius: 3.5rem;
+  height: 50vh;
+  width: 80vh;
+  background: white;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 10.5rem;
+  column-gap: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1250px){
+.skills_container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 350px;
+    height: auto;
+    padding-left:0px;
+}
+#skillimg {
+  height:8vh;
+}
 }
